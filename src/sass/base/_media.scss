@@ -39,6 +39,24 @@
             line-height: 40px;
         }
     }
+    .catalog {
+        &__content {
+            justify-content: space-evenly;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 70%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .feed {
+        &__wrapper {
+            padding: 65px 20px;
+        }
+    }
 
 }
 
@@ -66,8 +84,8 @@
     }
     .button {
         width: 125px;
-        height: 25px;
-        font-size: 10px;
+        height: 35px;
+        font-size: 12px;
         &_main {
             width: 260px;
             height: 40px;
@@ -95,11 +113,52 @@
             font-size: 12px;
         }
     }
+    .title {
+        font-size: 25px;
+    }
+    .catalog {
+        &__tab {
+            width: 150px;
+            height: 40px;
+            font-size: 15px;
+            padding-top: 11px;
+            line-height: normal;
+        }
+    }
+    .feed {
+        &__wrapper {
+            padding: 70px 20px;
+            hr {
+                width: 65%;
+                margin: 40px auto;
+            }
+        }
+        &__item {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__text {
+            padding: 30px;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+        &__count {
+            text-align: center;
+        }
+        &__deskr {
+            text-align: center;
+        }
+    }
     
 
 }
 
 @media (max-width: 575.98px) {
+    .title {
+        font-size: 18px;
+    }
     .header {
         flex-direction: column;
         &__logo {
@@ -187,6 +246,71 @@
         width: 240px;
         input {
             height: 45px;
+            font-size: 12px;
+        }
+    }
+    .catalog {
+        &__tabs {
+            margin-top: 40px;
+            flex-direction: column;
+        }
+        &__tab {
+            display: flex;
+            font-size: 12px;
+            justify-content: center;
+            flex-direction: row;
+            align-self: center;
+            margin-top: 10px;
+            border-radius: 50%;
+            transform: none;
+            div {
+                transform: none;
+            }
+        }
+        &__content {
+            padding: 0 20px;
+        }
+        &-item {
+            padding: 10px 10px 16px 10px;
+            min-height: 400px;
+            img {
+                min-height: 150px;
+            }
+            &__subtitle {
+                font-size: 13px;
+            }
+            &__deskr {
+                font-size: 12px;
+                margin-top: 13px;
+            }
+            &__link {
+                margin-top: 35px;
+            }
+            &__price {
+                font-size: 15px;
+            }
+            &__old-price {
+                font-size: 12px;
+            }
+            hr {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+        }
+        
+    }
+    .feed {
+        &__wrapper {
+            padding: 50px 20px;
+        }
+        &__text {
+            padding: 0;
+            padding-top: 25px;
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__deskr {
             font-size: 12px;
         }
     }
