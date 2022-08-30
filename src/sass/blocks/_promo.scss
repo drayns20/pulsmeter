@@ -1,6 +1,6 @@
 .promo{
     min-height: 650px;
-    padding: 21px 0 93px 0;
+    padding: 21px 10px 93px 10px;
     background: url(../img/main_screen_bg.jpg) center (center / cover) no-repeat;
     &__wrapper {
         display: flex;
@@ -53,6 +53,11 @@
             text-decoration: underline;
             text-transform: uppercase;
             color: #ffffff;
+            &:hover {
+                text-shadow: 3px -3px 5px rgb(179, 23, 88);
+                color: $main_color;
+                text-decoration: none;
+            }
         }
     }
 }
