@@ -16,6 +16,7 @@
     width: 380px;
     min-height: 400px;
     background-color: #f2f2f2;
+    border-radius: 2%;
     &__close {
         position: absolute;
         top: -3px;
@@ -43,6 +44,14 @@
     }
     &_mini {
         min-height: 140px;
+    }
+    .error {
+        border: 1px solid red;
+    }
+    label.error {
+        border: none;
+        margin-bottom: 15px;
+        color: #222;
     }
    
 }
